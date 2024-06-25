@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Foro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let post of posts">
+      <ion-label>{{ post }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-input [(ngModel)]="newPost" placeholder="Escribe un comentario"></ion-input>
+    <ion-button (click)="addPost()">Enviar</ion-button>
+  </ion-item>
+</ion-content>

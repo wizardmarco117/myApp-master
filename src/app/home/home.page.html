@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Datos de Sensores
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let dato of datos">
+      <ion-label>
+        <h2>Temperatura: {{ dato.temperatura }}°C</h2>
+        <h3>Humedad: {{ dato.humedad }}%</h3>
+        <p>{{ dato.fecha | date:'short' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

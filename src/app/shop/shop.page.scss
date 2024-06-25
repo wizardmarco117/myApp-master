@@ -1,0 +1,28 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    .product-item {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 16px;
+      text-align: center;
+      width: calc(50% - 32px);
+  
+      img {
+        width: 300px; /* ajusta el tamaño según tus necesidades */
+        height: 300px; /* ajusta el tamaño según tus necesidades */
+        object-fit: cover; /* asegura que la imagen se ajuste al tamaño especificado sin distorsión */
+      }
+  
+      h3 {
+        margin-top: 8px;
+      }
+  
+      p {
+        margin-top: 4px;
+      }
+    }
+  }
+  

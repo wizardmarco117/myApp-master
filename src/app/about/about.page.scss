@@ -1,0 +1,12 @@
+.about-section, .mission-section {
+    text-align: center;
+    padding: 16px;
+  
+    img {
+      width: 300px; /* ajusta el tamaño según tus necesidades */
+      height: 300px; /* ajusta el tamaño según tus necesidades */
+      object-fit: cover; /* asegura que la imagen se ajuste al tamaño especificado sin distorsión */
+    }
+    
+  }
+  
