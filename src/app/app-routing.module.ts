@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'forum',
     loadChildren: () => import('./forum/forum.module').then( m => m.ForumPageModule)
   },
+  {
+    path: 'comments',
+    loadChildren: () => import('./comments/comments.module').then( m => m.CommentsPageModule)
+  },
 ];
 
 @NgModule({
